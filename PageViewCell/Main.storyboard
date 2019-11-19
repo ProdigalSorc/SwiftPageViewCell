@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="1ym-wq-nOf">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="w2H-TM-Wyc">
+            <objects>
+                <viewController id="1ym-wq-nOf" customClass="ViewController" customModule="PageViewCell" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="pp5-vK-a21">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="uXd-iD-c0O">
+                                <rect key="frame" x="20" y="244" width="374" height="409"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="uXd-iD-c0O" firstAttribute="leading" secondItem="pp5-vK-a21" secondAttribute="leadingMargin" id="2Zl-5O-Kyr"/>
+                            <constraint firstItem="uXd-iD-c0O" firstAttribute="top" secondItem="eOg-mh-bhm" secondAttribute="top" constant="200" id="4hs-xO-M30"/>
+                            <constraint firstItem="uXd-iD-c0O" firstAttribute="trailing" secondItem="pp5-vK-a21" secondAttribute="trailingMargin" id="WVX-Uh-xrd"/>
+                            <constraint firstItem="uXd-iD-c0O" firstAttribute="centerY" secondItem="pp5-vK-a21" secondAttribute="centerY" id="y80-1W-YE0"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="eOg-mh-bhm"/>
+                    </view>
+                    <connections>
+                        <outlet property="contentView" destination="uXd-iD-c0O" id="KB1-0U-gjD"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="W5f-Om-qgA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-49.275362318840585" y="125.89285714285714"/>
+        </scene>
+        <!--Data View Controller-->
+        <scene sceneID="Ky9-tC-vsX">
+            <objects>
+                <viewController storyboardIdentifier="DataViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="8rG-of-7Sh" customClass="DataViewController" customModule="PageViewCell" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="esP-AN-vl6">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4tk-1o-5lg">
+                                <rect key="frame" x="183" y="436" width="48" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="4tk-1o-5lg" firstAttribute="centerX" secondItem="esP-AN-vl6" secondAttribute="centerX" id="Czx-pi-cLj"/>
+                            <constraint firstItem="4tk-1o-5lg" firstAttribute="centerY" secondItem="esP-AN-vl6" secondAttribute="centerY" id="Z9o-FI-fio"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Isy-gp-lh0"/>
+                    </view>
+                    <connections>
+                        <outlet property="displayLabel" destination="4tk-1o-5lg" id="eTu-Ga-No2"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GYm-z1-vCH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="665" y="-15"/>
+        </scene>
+        <!--Custom Page View Controller-->
+        <scene sceneID="MEm-7r-Wc7">
+            <objects>
+                <pageViewController storyboardIdentifier="CustomPageViewController" autoresizesArchivedViewToFullSize="NO" useStoryboardIdentifierAsRestorationIdentifier="YES" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="RIW-vi-UJG" customClass="CustomPageViewController" customModule="PageViewCell" customModuleProvider="target" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="feJ-lJ-2D1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1361" y="126"/>
+        </scene>
+    </scenes>
+</document>
